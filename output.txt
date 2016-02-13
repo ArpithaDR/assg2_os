@@ -1,0 +1,137 @@
+Final values at commandline are:
+lanbda value is: 1.000000mu value is: 0.350000r value is:1.500000tokenhandler thread is running
+tokenhandler thread for loop
+token t1 arrives, token bucket now has 1 token
+Packethandler thread is running
+tokenhandler thread for loop
+token t2 arrives, token bucket now has 2 token
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000service time is: 2857.14server1handler thread is running
+token t3 arrives, token bucket now has 3 token
+tokenhandler thread for loop
+token t4 arrives, token bucket now has 4 token
+tokenhandler thread for loop
+token t5 arrives, token bucket now has 5 token
+tokenhandler thread for loop
+token t6 arrives, token bucket now has 6 token
+tokenhandler thread for loop
+token t7 arrives, token bucket now has 7 token
+tokenhandler thread for loop
+server2handler thread is running
+token t8 arrives, token bucket now has 8 token
+tokenhandler thread for loop
+token t9 arrives, token bucket now has 9 token
+tokenhandler thread for loop
+token t10 arrives, token bucket now has 10 token
+tokenhandler thread for loop
+token t11 arrives,dropped
+tokenhandler thread for loop
+token t12 arrives,dropped
+tokenhandler thread for loop
+token t13 arrives,dropped
+tokenhandler thread for loop
+token t14 arrives,dropped
+tokenhandler thread for loop
+token t15 arrives,dropped
+tokenhandler thread for loop
+token t16 arrives,dropped
+tokenhandler thread for loop
+token t17 arrives,dropped
+tokenhandler thread for loop
+token t18 arrives,dropped
+tokenhandler thread for loop
+token t19 arrives,dropped
+tokenhandler thread for loop
+token t20 arrives,dropped
+tokenhandler thread for loop
+token t21 arrives,dropped
+tokenhandler thread for loop
+token t22 arrives,dropped
+tokenhandler thread for loop
+token t23 arrives,dropped
+tokenhandler thread for loop
+token t24 arrives,dropped
+tokenhandler thread for loop
+token t25 arrives,dropped
+tokenhandler thread for loop
+token t26 arrives,dropped
+tokenhandler thread for loop
+token t27 arrives,dropped
+tokenhandler thread for loop
+token t28 arrives,dropped
+tokenhandler thread for loop
+token t29 arrives,dropped
+tokenhandler thread for loop
+token t30 arrives,dropped
+tokenhandler thread for loop
+token t31 arrives,dropped
+tokenhandler thread for loop
+token t32 arrives,dropped
+tokenhandler thread for loop
+token t33 arrives,dropped
+tokenhandler thread for loop
+token t34 arrives,dropped
+tokenhandler thread for loop
+token t35 arrives,dropped
+tokenhandler thread for loop
+token t36 arrives,dropped
+tokenhandler thread for loop
+token t37 arrives,dropped
+tokenhandler thread for loop
+token t38 arrives,dropped
+tokenhandler thread for loop
+token t39 arrives,dropped
+tokenhandler thread for loop
+token t40 arrives,dropped
+tokenhandler thread for loop
+token t41 arrives,dropped
+tokenhandler thread for loop
+token t42 arrives,dropped
+tokenhandler thread for loop
+token t43 arrives,dropped
+tokenhandler thread for loop
+token t44 arrives,dropped
+tokenhandler thread for loop
+token t45 arrives,dropped
+tokenhandler thread for loop
+token t46 arrives,dropped
+tokenhandler thread for loop
+token t47 arrives,dropped
+tokenhandler thread for loop
+token t48 arrives,dropped
+tokenhandler thread for loop
+token t49 arrives,dropped
+tokenhandler thread for loop
+token t50 arrives,dropped
+tokenhandler thread for loop
+token t51 arrives,dropped
+tokenhandler thread for loop
+token t52 arrives,dropped
+tokenhandler thread for loop
+token t53 arrives,dropped
+tokenhandler thread for loop
+token t54 arrives,dropped
+tokenhandler thread for loop
+token t55 arrives,dropped
+tokenhandler thread for loop
+token t56 arrives,dropped
+tokenhandler thread for loop
+token t57 arrives,dropped
+tokenhandler thread for loop
+token t58 arrives,dropped
+tokenhandler thread for loop
+token t59 arrives,dropped
+tokenhandler thread for loop
+token t60 arrives,dropped
+tokenhandler thread for loop
+token t61 arrives,dropped
+tokenhandler thread for loop
+token t62 arrives,dropped
+tokenhandler thread for loop
+token t63 arrives,dropped
+tokenhandler thread for loop
+token t64 arrives,dropped
+tokenhandler thread for loop
+token t65 arrives,dropped
+to

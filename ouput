@@ -1,0 +1,5358 @@
+Final values at commandline are:
+lanbda value is: 1.000000mu value is: 0.350000r value is:1.500000tokenhandler thread is running
+tokenhandler thread for loop
+Packethandler thread is running
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+server1handler thread is running
+server2handler thread is running
+token t1 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+p1 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p1 enters Q1
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t2 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+p2 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p2 enters Q1
+packet_id at packet handler:2Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t3 arrives, token bucket now has 3 token
+p1 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p1 enters Q2
+tokenhandler thread for loop
+p3 arrives,needs 3 tokens, inter-arrival time = 1000ms
+at server1:1
+p1 leaves Q2, time in Q2=
+p1 begins service at S1, requesting 2.85714e+06 of service
+p3 enters Q1
+packet_id at packet handler:3Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+p1 departs from S1, service time =2.85714e+06, time in system =3.85714e+06
+token t4 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+p4 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p4 enters Q1
+packet_id at packet handler:4Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t5 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+p5 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p5 enters Q1
+packet_id at packet handler:5Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t6 arrives, token bucket now has 3 token
+p2 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p2 enters Q2
+tokenhandler thread for loop
+p6 arrives,needs 3 tokens, inter-arrival time = 1000ms
+at server1:2
+p2 leaves Q2, time in Q2=
+p2 begins service at S2, requesting 2.85714e+06 of service
+p6 enters Q1
+packet_id at packet handler:6Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+p2 departs from S2, service time =2.85714e+06, time in system =3.85714e+06
+token t7 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+p7 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p7 enters Q1
+packet_id at packet handler:7Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t8 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+p8 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p8 enters Q1
+packet_id at packet handler:8Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t9 arrives, token bucket now has 3 token
+p3 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p3 enters Q2
+tokenhandler thread for loop
+at server1:3
+p3 leaves Q2, time in Q2=
+p3 begins service at S1, requesting 2.85714e+06 of service
+p9 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p9 enters Q1
+packet_id at packet handler:9Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+p3 departs from S1, service time =2.85714e+06, time in system =3.85714e+06
+token t10 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+p10 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p10 enters Q1
+packet_id at packet handler:10Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t11 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+p11 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p11 enters Q1
+packet_id at packet handler:11Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t12 arrives, token bucket now has 3 token
+p4 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p4 enters Q2
+tokenhandler thread for loop
+at server1:4
+p4 leaves Q2, time in Q2=
+p4 begins service at S2, requesting 2.85714e+06 of service
+p12 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p12 enters Q1
+packet_id at packet handler:12Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+p4 departs from S2, service time =2.85714e+06, time in system =3.85714e+06
+token t13 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+p13 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p13 enters Q1
+packet_id at packet handler:13Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t14 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+p14 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p14 enters Q1
+packet_id at packet handler:14Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t15 arrives, token bucket now has 3 token
+p5 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p5 enters Q2
+tokenhandler thread for loop
+at server1:5
+p5 leaves Q2, time in Q2=
+p5 begins service at S1, requesting 2.85714e+06 of service
+p15 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p15 enters Q1
+packet_id at packet handler:15Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+p5 departs from S1, service time =2.85714e+06, time in system =3.85714e+06
+token t16 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+p16 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p16 enters Q1
+packet_id at packet handler:16Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t17 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+p17 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p17 enters Q1
+packet_id at packet handler:17Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t18 arrives, token bucket now has 3 token
+p6 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p6 enters Q2
+p18 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p18 enters Q1
+packet_id at packet handler:18Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+at server1:6
+p6 leaves Q2, time in Q2=
+p6 begins service at S2, requesting 2.85714e+06 of service
+p6 departs from S2, service time =2.85714e+06, time in system =3.85714e+06
+token t19 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+p19 arrives,needs 3 tokens, inter-arrival time = 1000ms
+p19 enters Q1
+packet_id at packet handler:19Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t20 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t21 arrives, token bucket now has 3 token
+p7 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p7 enters Q2
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+at server1:7
+p7 leaves Q2, time in Q2=
+p7 begins service at S1, requesting 2.85714e+06 of service
+tokenhandler thread for loop
+p7 departs from S1, service time =2.85714e+06, time in system =3.85714e+06
+token t22 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t23 arrives, token bucket now has 2 token
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t24 arrives, token bucket now has 3 token
+p8 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p8 enters Q2
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+at server1:8
+p8 leaves Q2, time in Q2=
+p8 begins service at S1, requesting 2.85714e+06 of service
+p8 departs from S1, service time =2.85714e+06, time in system =3.85714e+06
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t25 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t26 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t27 arrives, token bucket now has 3 token
+p9 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p9 enters Q2
+tokenhandler thread for loop
+at server1:9
+p9 leaves Q2, time in Q2=
+p9 begins service at S2, requesting 2.85714e+06 of service
+p9 departs from S2, service time =2.85714e+06, time in system =3.85714e+06
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t28 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t29 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+token t30 arrives, token bucket now has 3 token
+p10 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p10 enters Q2
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+at server1:10
+p10 leaves Q2, time in Q2=
+p10 begins service at S2, requesting 2.85714e+06 of service
+p10 departs from S2, service time =2.85714e+06, time in system =3.85714e+06
+token t31 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t32 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t33 arrives, token bucket now has 3 token
+p11 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p11 enters Q2
+tokenhandler thread for loop
+at server1:11
+p11 leaves Q2, time in Q2=
+p11 begins service at S1, requesting 2.85714e+06 of service
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+p11 departs from S1, service time =2.85714e+06, time in system =3.85714e+06
+token t34 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t35 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t36 arrives, token bucket now has 3 token
+p12 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p12 enters Q2
+tokenhandler thread for loop
+at server1:12
+p12 leaves Q2, time in Q2=
+p12 begins service at S2, requesting 2.85714e+06 of service
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+p12 departs from S2, service time =2.85714e+06, time in system =3.85714e+06
+token t37 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t38 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t39 arrives, token bucket now has 3 token
+p13 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p13 enters Q2
+tokenhandler thread for loop
+at server1:13
+p13 leaves Q2, time in Q2=
+p13 begins service at S1, requesting 2.85714e+06 of service
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+p13 departs from S1, service time =2.85714e+06, time in system =3.85714e+06
+token t40 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t41 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t42 arrives, token bucket now has 3 token
+p14 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p14 enters Q2
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+at server1:14
+p14 leaves Q2, time in Q2=
+p14 begins service at S2, requesting 2.85714e+06 of service
+p14 departs from S2, service time =2.85714e+06, time in system =3.85714e+06
+token t43 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t44 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t45 arrives, token bucket now has 3 token
+p15 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p15 enters Q2
+Packethandler thread for loop
+interarrival time is: 1000
+at server1:15
+p15 leaves Q2, time in Q2=
+p15 begins service at S1, requesting 2.85714e+06 of service
+tokenhandler thread for loop
+service time is: 2857.14
+p15 departs from S1, service time =2.85714e+06, time in system =3.85714e+06
+token t46 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t47 arrives, token bucket now has 2 token
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t48 arrives, token bucket now has 3 token
+p16 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p16 enters Q2
+Packethandler thread for loop
+interarrival time is: 1000
+at server1:16
+p16 leaves Q2, time in Q2=
+p16 begins service at S2, requesting 2.85714e+06 of service
+service time is: 2857.14
+tokenhandler thread for loop
+p16 departs from S2, service time =2.85714e+06, time in system =3.85714e+06
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t49 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t50 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+token t51 arrives, token bucket now has 3 token
+p17 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p17 enters Q2
+Packethandler thread for loop
+interarrival time is: 1000
+at server1:17
+p17 leaves Q2, time in Q2=
+p17 begins service at S1, requesting 2.85714e+06 of service
+tokenhandler thread for loop
+service time is: 2857.14
+p17 departs from S1, service time =2.85714e+06, time in system =3.85714e+06
+token t52 arrives, token bucket now has 1 token
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+token t53 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t54 arrives, token bucket now has 3 token
+p18 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p18 enters Q2
+Packethandler thread for loop
+interarrival time is: 1000
+at server1:18
+p18 leaves Q2, time in Q2=
+p18 begins service at S2, requesting 2.85714e+06 of service
+service time is: 2857.14
+tokenhandler thread for loop
+p18 departs from S2, service time =2.85714e+06, time in system =3.85714e+06
+token t55 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t56 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t57 arrives, token bucket now has 3 token
+p19 leaves Q1, time in Q1=666.667, token bucket now has 0 token
+object in Q2:
+p19 enters Q2
+Packethandler thread for loop
+interarrival time is: 1000
+at server1:19
+p19 leaves Q2, time in Q2=
+p19 begins service at S1, requesting 2.85714e+06 of service
+service time is: 2857.14
+tokenhandler thread for loop
+p19 departs from S1, service time =2.85714e+06, time in system =3.85714e+06
+token t58 arrives, token bucket now has 1 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t59 arrives, token bucket now has 2 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t60 arrives, token bucket now has 3 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t61 arrives, token bucket now has 4 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t62 arrives, token bucket now has 5 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t63 arrives, token bucket now has 6 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t64 arrives, token bucket now has 7 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t65 arrives, token bucket now has 8 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t66 arrives, token bucket now has 9 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t67 arrives, token bucket now has 10 token
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t68 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t69 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t70 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t71 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t72 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t73 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t74 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t75 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t76 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t77 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t78 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t79 arrives,dropped
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+token t80 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t81 arrives,dropped
+tokenhandler thread for loop
+token t82 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t83 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t84 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t85 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t86 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t87 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t88 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t89 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t90 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t91 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t92 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t93 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t94 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t95 arrives,dropped
+tokenhandler thread for loop
+token t96 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t97 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t98 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t99 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t100 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t101 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t102 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t103 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t104 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t105 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t106 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t107 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t108 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t109 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t110 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t111 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t112 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t113 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t114 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t115 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t116 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t117 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t118 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t119 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t120 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t121 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t122 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t123 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t124 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t125 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t126 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t127 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t128 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t129 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t130 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t131 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t132 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t133 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t134 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t135 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t136 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t137 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t138 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t139 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t140 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t141 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t142 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t143 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t144 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t145 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t146 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t147 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t148 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t149 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t150 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t151 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t152 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t153 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t154 arrives,dropped
+tokenhandler thread for loop
+token t155 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t156 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t157 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t158 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t159 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t160 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t161 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t162 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t163 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t164 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t165 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t166 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t167 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t168 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t169 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t170 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t171 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t172 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t173 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t174 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t175 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t176 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t177 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t178 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t179 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t180 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t181 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t182 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t183 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t184 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t185 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t186 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t187 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t188 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t189 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t190 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t191 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t192 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t193 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t194 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t195 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t196 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t197 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t198 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t199 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t200 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t201 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t202 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t203 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t204 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t205 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t206 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t207 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t208 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t209 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t210 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t211 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t212 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t213 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t214 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t215 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t216 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t217 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t218 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t219 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t220 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t221 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t222 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t223 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t224 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t225 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t226 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t227 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t228 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t229 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t230 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t231 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t232 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t233 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t234 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t235 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t236 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t237 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t238 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t239 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t240 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t241 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t242 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t243 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t244 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t245 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t246 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t247 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t248 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t249 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t250 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t251 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t252 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t253 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t254 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t255 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t256 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t257 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t258 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t259 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t260 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t261 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t262 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t263 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t264 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t265 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t266 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t267 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t268 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t269 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t270 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t271 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t272 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t273 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t274 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t275 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t276 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t277 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t278 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t279 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t280 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t281 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t282 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t283 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t284 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t285 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t286 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t287 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t288 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t289 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t290 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t291 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t292 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+Packethandler thread for loop
+interarrival time is: 1000
+token t293 arrives,dropped
+service time is: 2857.14
+tokenhandler thread for loop
+token t294 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t295 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t296 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t297 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t298 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t299 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t300 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t301 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t302 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t303 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t304 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t305 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t306 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t307 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t308 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t309 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t310 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t311 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t312 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t313 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t314 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t315 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t316 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t317 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t318 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t319 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t320 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t321 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t322 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t323 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t324 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t325 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t326 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t327 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t328 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t329 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t330 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t331 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t332 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t333 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t334 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t335 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t336 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t337 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t338 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t339 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t340 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t341 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t342 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t343 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t344 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t345 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t346 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t347 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t348 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t349 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t350 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t351 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t352 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t353 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t354 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t355 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t356 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t357 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t358 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t359 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t360 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t361 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t362 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t363 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t364 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t365 arrives,dropped
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+token t366 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t367 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t368 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t369 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t370 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t371 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t372 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t373 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t374 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t375 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t376 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t377 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t378 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t379 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t380 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t381 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t382 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t383 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t384 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t385 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t386 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t387 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t388 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t389 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t390 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t391 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t392 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t393 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t394 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t395 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t396 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t397 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t398 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t399 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t400 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t401 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t402 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t403 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t404 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t405 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t406 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t407 arrives,dropped
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+token t408 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t409 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t410 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t411 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t412 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t413 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t414 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t415 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t416 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t417 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+token t418 arrives,dropped
+tokenhandler thread for loop
+service time is: 2857.14
+token t419 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t420 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t421 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t422 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t423 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t424 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t425 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t426 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t427 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t428 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t429 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t430 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t431 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t432 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t433 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t434 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t435 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t436 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t437 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t438 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t439 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t440 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t441 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t442 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t443 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t444 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t445 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t446 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t447 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t448 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t449 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t450 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t451 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t452 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t453 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t454 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t455 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t456 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t457 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t458 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t459 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t460 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t461 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t462 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t463 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t464 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t465 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t466 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t467 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t468 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t469 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t470 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t471 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t472 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t473 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t474 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t475 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t476 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t477 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t478 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t479 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t480 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t481 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t482 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t483 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t484 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t485 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t486 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t487 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t488 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t489 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t490 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t491 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t492 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t493 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t494 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t495 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t496 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t497 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t498 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t499 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t500 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t501 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t502 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t503 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t504 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t505 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t506 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t507 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t508 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t509 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t510 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t511 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t512 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t513 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t514 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t515 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t516 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t517 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t518 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t519 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t520 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t521 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t522 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t523 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t524 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t525 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t526 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t527 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t528 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t529 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t530 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t531 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t532 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t533 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t534 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t535 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t536 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t537 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t538 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t539 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t540 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t541 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t542 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t543 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t544 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t545 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t546 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t547 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t548 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t549 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t550 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t551 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t552 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t553 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t554 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t555 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t556 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t557 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t558 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t559 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t560 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t561 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t562 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t563 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t564 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t565 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t566 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t567 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t568 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t569 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t570 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t571 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t572 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t573 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t574 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t575 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t576 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t577 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t578 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t579 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t580 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t581 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t582 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t583 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t584 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t585 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t586 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t587 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t588 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t589 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t590 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t591 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t592 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t593 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t594 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t595 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t596 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t597 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t598 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t599 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t600 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t601 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t602 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t603 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t604 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t605 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t606 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t607 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t608 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t609 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t610 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t611 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t612 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t613 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t614 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t615 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t616 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t617 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t618 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t619 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t620 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t621 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t622 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t623 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t624 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t625 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t626 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t627 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t628 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t629 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t630 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t631 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t632 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t633 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t634 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t635 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t636 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t637 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t638 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t639 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t640 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t641 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t642 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t643 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t644 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t645 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t646 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t647 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t648 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t649 arrives,dropped
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+token t650 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t651 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t652 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t653 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t654 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t655 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t656 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t657 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t658 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t659 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t660 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t661 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t662 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t663 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t664 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t665 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t666 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t667 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t668 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t669 arrives,dropped
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+token t670 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t671 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t672 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t673 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t674 arrives,dropped
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+token t675 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t676 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t677 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t678 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t679 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t680 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t681 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t682 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t683 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t684 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t685 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t686 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t687 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t688 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t689 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t690 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t691 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t692 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t693 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t694 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t695 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t696 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t697 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t698 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t699 arrives,dropped
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+token t700 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t701 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t702 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t703 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t704 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t705 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t706 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t707 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t708 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t709 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t710 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t711 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t712 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t713 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t714 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t715 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t716 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t717 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t718 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t719 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t720 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t721 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t722 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t723 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t724 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t725 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t726 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t727 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t728 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t729 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t730 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t731 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t732 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t733 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t734 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t735 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t736 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t737 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t738 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t739 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t740 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t741 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t742 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t743 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t744 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t745 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t746 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t747 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t748 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t749 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t750 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t751 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t752 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t753 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t754 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t755 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t756 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t757 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t758 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t759 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t760 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t761 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t762 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t763 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t764 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t765 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t766 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t767 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t768 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t769 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t770 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t771 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t772 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t773 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t774 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t775 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t776 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t777 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t778 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t779 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t780 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t781 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t782 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t783 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t784 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t785 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t786 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t787 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t788 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t789 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t790 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t791 arrives,dropped
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+token t792 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+Packethandler thread for loop
+token t793 arrives,dropped
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t794 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t795 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t796 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t797 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t798 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t799 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t800 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t801 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t802 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t803 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t804 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t805 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t806 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t807 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t808 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t809 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t810 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t811 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t812 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t813 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t814 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t815 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t816 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t817 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t818 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t819 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t820 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t821 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t822 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t823 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t824 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t825 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t826 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t827 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t828 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t829 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t830 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t831 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t832 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t833 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t834 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t835 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t836 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t837 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t838 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t839 arrives,dropped
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+token t840 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t841 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t842 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t843 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t844 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t845 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t846 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t847 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t848 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t849 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t850 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t851 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t852 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t853 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t854 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t855 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t856 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t857 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t858 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t859 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t860 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t861 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t862 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t863 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t864 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t865 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t866 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t867 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t868 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t869 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t870 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t871 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t872 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t873 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t874 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t875 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t876 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t877 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t878 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t879 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t880 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t881 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t882 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t883 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t884 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t885 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t886 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t887 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t888 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t889 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t890 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t891 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t892 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t893 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t894 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t895 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t896 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t897 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t898 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t899 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t900 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t901 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t902 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t903 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t904 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t905 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t906 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t907 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t908 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t909 arrives,dropped
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+token t910 arrives,dropped
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+token t911 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t912 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t913 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t914 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t915 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t916 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t917 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t918 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t919 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t920 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t921 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t922 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t923 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t924 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t925 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t926 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t927 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t928 arrives,dropped
+tokenhandler thread for loop
+token t929 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t930 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t931 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t932 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t933 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t934 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t935 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t936 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t937 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t938 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t939 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t940 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t941 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t942 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t943 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t944 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t945 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t946 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t947 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t948 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t949 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t950 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t951 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t952 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t953 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t954 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t955 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t956 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t957 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t958 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t959 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t960 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t961 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t962 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t963 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t964 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t965 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t966 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t967 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t968 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t969 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t970 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t971 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t972 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t973 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t974 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t975 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t976 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t977 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t978 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t979 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t980 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t981 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t982 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t983 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t984 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t985 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t986 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t987 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t988 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t989 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t990 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t991 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t992 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t993 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t994 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t995 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t996 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t997 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t998 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t999 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1000 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1001 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1002 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1003 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1004 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1005 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1006 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1007 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1008 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1009 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1010 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1011 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1012 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1013 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1014 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1015 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1016 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1017 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1018 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1019 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1020 arrives,dropped
+Packethandler thread for loop
+tokenhandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1021 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1022 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1023 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1024 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1025 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1026 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1027 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1028 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1029 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1030 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1031 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1032 arrives,dropped
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+tokenhandler thread for loop
+token t1033 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1034 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1035 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread for loop
+interarrival time is: 1000
+service time is: 2857.14
+token t1036 arrives,dropped
+tokenhandler thread for loop
+Packethandler thread fo
