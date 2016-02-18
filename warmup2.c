@@ -32,11 +32,11 @@ char *filename;
 int deterministic = 1;
 int dropped_tokens = 0;
 int available_tokens=0;
-int packet_counter =1;
-int token_counter =1;
+int packet_counter =0;
+int token_counter =0;
 int dropped_packets =0;
-double totalQ1time = 0;
-double totalQ2time = 0;
+int completed_packets =0;
+int removed_packets =0;
 struct timeval emulationstart;
 double emulationtime =0;
 double timefromstart=0;
@@ -46,6 +46,13 @@ pthread_t user_threadID;
 sigset_t new;
 void *handler(), interrupt();
 struct sigaction act;
+double total_int_arr_time=0; //time in milliseconds
+double total_service_time=0;
+double total_system_time=0;
+double total_time_Q1=0;
+double total_time_Q2=0;
+double total_time_S1=0;
+double total_time_S2=0;
 
 //sigset_t set;
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
@@ -80,7 +87,6 @@ void Handle_Error(char *error, int line_num){
 
 packetelem *Create_Packet(int id,int token_num,double servicetime,struct timeval generationTime,struct timeval Q1arrivaltime, struct timeval Q1departtime, struct timeval Q2arrivaltime, struct timeval Q2departtime)
 {
-    char *error;
     packetelem *newPacket = (packetelem *)malloc(sizeof(packetelem));
     if(newPacket !=NULL) {
         newPacket->p_id = id;
@@ -93,7 +99,7 @@ packetelem *Create_Packet(int id,int token_num,double servicetime,struct timeval
 	newPacket->Q2DepartureTime = Q2departtime;
         return newPacket;
     } else {
-        error = "Error Allocating memory\n";
+        fprintf(stdout,"Error Allocating memory\n");
 	exit(1);
    }
    return newPacket;
@@ -112,6 +118,10 @@ double valinmicrosec(double timetoconvert) {
 }
 double converttomilliseconds(double timeinmicro) {
     return timeinmicro/1000;
+}
+
+double convertmillitosec(double timeinmilli) {
+   return timeinmilli/1000;    
 }
 
 double calculatedifffromstart(struct timeval temptime){
@@ -276,9 +286,15 @@ void *packethandler(void *arg) {
 	    } 
 	}
       }
-      if(packet_counter > num) 
+      num=3;
+      //current packet processing starts
+      if(packet_counter==num) {
+          packet_completed =1;
+      }
+      if(packet_counter == num) 
 	 pthread_exit(NULL);
       else {
+        packet_counter++;
 	if(packet_counter==1)
           sleeptime = p_interarrivaltime; //time in microsecond
         else 
@@ -295,12 +311,13 @@ void *packethandler(void *arg) {
 	gettimeofday(&beforeSleep,NULL);
         bfrsleep = structtimeinmicrosec(beforeSleep);  //time in microsecond
 
-
-	if(packet_counter==1)
+	if(packet_counter==1) {
 	  meas_interarrivaltime = converttomilliseconds(calculatedifffromstart(beforeSleep));
-	else {
+          total_int_arr_time+=meas_interarrivaltime;//time in milliseconds
+	} else {
           meas_interarrivaltime = bfrsleep - prevpacket; //calculates interarrival time in microseconds
 	  meas_interarrivaltime = converttomilliseconds(meas_interarrivaltime); //time in milliseconds
+          total_int_arr_time+=meas_interarrivaltime; //time in milliseconds;
 	}
 
 	//assign current time to previous to be used by next packet
@@ -374,7 +391,6 @@ void *packethandler(void *arg) {
          }
          gettimeofday(&afterpktProc,NULL);
          aftproc = structtimeinmicrosec(afterpktProc);
-         packet_counter++;
          pthread_mutex_unlock(&mutex);	
       }
     }
@@ -383,7 +399,6 @@ void *packethandler(void *arg) {
 
 
 void *tokenhandler(void *arg){
-	PrintValues();
    
     struct timeval beforeSleep,afterpktProc;
     struct timeval Q1time,afrQ1remo,Q2time,afttoken,afrQ2remo,generationtime;
@@ -392,8 +407,6 @@ void *tokenhandler(void *arg){
     double meas_interarrivaltime =0.0;
     double sleeptime=0;
     double aftproc = 0;
-    int numoftokens=0;
-    int sig=0;
     double temp;
     double t_interarrivaltime;
     int tokens_needed;
@@ -406,6 +419,7 @@ void *tokenhandler(void *arg){
     for(;;) {
     //sigwait(&set, &sig);
 
+    token_counter++;
     t_interarrivaltime = valinmicrosec(r); //time in microsecond
     if(token_counter==1)
        sleeptime = t_interarrivaltime; //time in microsecond
@@ -465,6 +479,7 @@ void *tokenhandler(void *arg){
 	  available_tokens = available_tokens - tokens_needed;
 	  flockfile (stdout);
 	  gettimeofday(&afrQ1remo,NULL);
+          packet->Q1DepartureTime=afrQ1remo;
           temp = converttomilliseconds(calculatedifffromstart(afrQ1remo));
 	  timeinQ1 = converttomilliseconds(calculatediff(afrQ1remo,Q1time));
           printf("%012.3fms: p%d leaves Q1, time in Q1=%.3f, token bucket now has %d token\n",temp,packet_id,timeinQ1,available_tokens);
@@ -505,8 +520,9 @@ void *server1handler(void *arg){
     double totaltimeinsystem;
     struct timeval pktgeneration;
     struct timeval Q2DepartTime;
-    double timeinQ2;
-    struct timeval Q2arrivaltime;
+    double timeinQ2=0;
+    double timeinQ1=0;
+    struct timeval Q2arrivaltime,Q1arrivaltime,Q1departtime;
     struct timeval bfrservice,aftservice;
     double timevalue;
     printf("server1handler thread is running\n");
@@ -521,6 +537,7 @@ void *server1handler(void *arg){
         }
 	pthread_cond_wait(&queue_not_empty, &mutex);
       }
+    
       if(!My402ListEmpty(&Q2)) {
 	  packetelem *packet = (packetelem *) malloc(sizeof(packetelem));
           My402ListElem *elem=NULL;
@@ -529,9 +546,15 @@ void *server1handler(void *arg){
           packet_id = packet->p_id;
 	  pktgeneration = packet->GenerationTime; 
 	  Q2arrivaltime = packet->Q2ArrivalTime;
+	  Q1departtime = packet->Q1DepartureTime;
+          Q1arrivaltime = packet->Q1ArrivalTime;
 	  double servicetime = packet->p_service_time;
+ 	  completed_packets++;
 	  gettimeofday(&Q2DepartTime,NULL);
           timeinQ2 = converttomilliseconds(calculatediff(Q2DepartTime,Q2arrivaltime));
+          total_time_Q2+=timeinQ2;
+          timeinQ1 = converttomilliseconds(calculatediff(Q1departtime,Q1arrivaltime));
+          total_time_Q1+=timeinQ1;
           timevalue = converttomilliseconds(calculatedifffromstart(Q2DepartTime));
           flockfile (stdout);
           printf("%012.3fms: p%d leaves Q2, time in Q2=%.3fms\n",timevalue,packet_id,timeinQ2);
@@ -546,7 +569,10 @@ void *server1handler(void *arg){
 	  gettimeofday(&aftservice,NULL);
           timevalue = converttomilliseconds(calculatedifffromstart(aftservice));
           double service_time = converttomilliseconds(calculatediff(aftservice,bfrservice));
+          total_service_time+=service_time;
+          total_time_S1+=service_time;
 	  totaltimeinsystem = converttomilliseconds(calculatediff(aftservice,pktgeneration));
+          total_system_time+=totaltimeinsystem;
 	  flockfile (stdout);
 	  printf("%012.3fms: p%d departs from S1, service time =%.3fms, time in system =%.3fms\n",timevalue,packet_id,service_time,totaltimeinsystem);
 	  funlockfile(stdout);
@@ -560,8 +586,9 @@ void *server2handler(void *arg){
     double totaltimeinsystem;
     struct timeval pktgeneration;
     struct timeval Q2DepartTime;
-    double timeinQ2;
-    struct timeval Q2arrivaltime;
+    double timeinQ2=0;
+    double timeinQ1=0;
+    struct timeval Q2arrivaltime,Q1arrivaltime,Q1departtime;
     struct timeval bfrservice,aftservice;
     double timevalue;
 
@@ -583,12 +610,19 @@ void *server2handler(void *arg){
           My402ListElem *elem=NULL;
           elem = My402ListFirst(&Q2);
           packet = (packetelem *)(elem->obj);
+	  completed_packets++;
           packet_id = packet->p_id;
           pktgeneration = packet->GenerationTime;
+          Q1arrivaltime = packet->Q1ArrivalTime;
+          Q1departtime = packet->Q1DepartureTime;
           Q2arrivaltime = packet->Q2ArrivalTime;
           double servicetime = packet->p_service_time;
 	  gettimeofday(&Q2DepartTime,NULL);
+          packet->Q2DepartureTime = Q2DepartTime;
           timeinQ2 = converttomilliseconds(calculatediff(Q2DepartTime,Q2arrivaltime));
+          total_time_Q2+=timeinQ2;
+          timeinQ1 = converttomilliseconds(calculatediff(Q1departtime,Q1arrivaltime));
+          total_time_Q1+=timeinQ1;
           timevalue = converttomilliseconds(calculatedifffromstart(Q2DepartTime));
           flockfile (stdout);
           printf("%012.3fms: p%d leaves Q2, time in Q2=%.3fms\n",timevalue,packet_id,timeinQ2);
@@ -603,7 +637,10 @@ void *server2handler(void *arg){
           gettimeofday(&aftservice,NULL);
           timevalue = converttomilliseconds(calculatedifffromstart(aftservice));
 	  double service_time = converttomilliseconds(calculatediff(aftservice,bfrservice));
+          total_service_time+=service_time;
+	  total_time_S2+=service_time;
           totaltimeinsystem = converttomilliseconds(calculatediff(aftservice,pktgeneration));
+	  total_system_time+=totaltimeinsystem;
           flockfile (stdout);
           printf("%012.3fms: p%d departs from S2, service time =%.3fms, time in system =%.3fms\n",timevalue,packet_id,service_time,totaltimeinsystem);
           funlockfile(stdout);
@@ -619,7 +656,7 @@ void ProcessOptions(int argc, char *argv[])
     char *error;
     char *val;
     char buf[1024];
-    char *temp;
+
     if(argc>1){
      	for (i=1; i< argc; i=i+2) {
    	    if((strcmp(argv[i],"-lambda")==0) && (argc > i+1)) {
@@ -735,15 +772,102 @@ void PrintValues() {
 
 }
 
+void PrintStatistics(struct timeval emulationendtime) {
+
+    //convert all the time to seconds
+    double avg_service_time,avg_total_time_Q1,avg_total_time_Q2,avg_total_time_S1,avg_total_time_S2;
+    double avg_int_arr_time,avg_system_time,token_drop_prob,packet_drop_prob;
+
+    double totalemulation = (calculatediff(emulationendtime,emulationstart))/1000000; //time in seconds
+
+    fprintf(stdout,"\nStatistics:\n");
+    if(packet_counter == 0) {
+	fprintf(stdout,"\t average packet inter-arrival time = Not Available (No packets arrived into the system)\n");
+    } else {
+        avg_int_arr_time = total_int_arr_time/packet_counter;
+	avg_int_arr_time = convertmillitosec(avg_int_arr_time);
+        fprintf(stdout,"\t average packet inter-arrival time = %.6g\n",avg_int_arr_time);
+    }
+    if(completed_packets == 0) {
+	fprintf(stdout,"\t average packet service time = Not Available (No packets were serviced during the emulation)\n");
+    } else {
+   	avg_service_time = total_service_time/completed_packets;
+        avg_service_time = convertmillitosec(avg_service_time);
+	fprintf(stdout,"\t average packet service time = %.6g\n",avg_service_time);
+    }
+
+    fprintf(stdout,"\n");
+
+    if(total_time_Q1 == 0) {
+        fprintf(stdout,"\t average number of packets at Q1 = Not Available (No packets entered Q2)\n");
+    }
+    else {
+        total_time_Q1 = convertmillitosec(total_time_Q1);
+        avg_total_time_Q1 = total_time_Q1/totalemulation;
+        fprintf(stdout,"\t average number of packets at Q1 = %.6g\n",avg_total_time_Q1);
+    }
+
+    if(total_time_Q2 == 0) {
+        fprintf(stdout,"\t average number of packets at Q2 = Not Available (No packets entered Q2)\n");
+    }
+    else {
+        printf("totaltimeQ2: %.3g, totalemulation:%.3g\n",total_time_Q2, totalemulation);
+        total_time_Q2 = convertmillitosec(total_time_Q2);
+        avg_total_time_Q2 = total_time_Q2/totalemulation;
+        fprintf(stdout,"\t average number of packets at Q2 = %.6g\n",avg_total_time_Q2);
+    }
+
+    if(total_time_S1 == 0) {
+	fprintf(stdout,"\t average number of packets at S1 = Not Available (No packets entered S1 for service)\n");
+    } else {
+	total_time_S1 = convertmillitosec(total_time_S1);
+	avg_total_time_S1 = total_time_S1/totalemulation;
+	fprintf(stdout,"\t average number of packets at S1 = %.6g\n",avg_total_time_S1);
+    }
+  
+    if(total_time_S2 == 0) {
+        fprintf(stdout,"\t average number of packets at S2 = Not Available (No packets entered S1 for service)\n");
+    } else {
+        total_time_S2 = convertmillitosec(total_time_S2);
+        avg_total_time_S2 = total_time_S2/totalemulation;
+        fprintf(stdout,"\t average number of packets at S2 = %.6g\n",avg_total_time_S2);
+    }
+ 
+    fprintf(stdout,"\n");
+
+    if(completed_packets == 0) {
+        fprintf(stdout,"\t average time a packet spent in system = Not Available (No packets were serviced during the emulation)\n");
+    } else {
+	avg_system_time = total_system_time/completed_packets;
+        avg_system_time = convertmillitosec(avg_system_time);
+	fprintf(stdout,"\t average time a packet spent in system = %.6g\n",avg_system_time);
+	fprintf(stdout,"\t standard deviation for time spent in system = ");
+    }
+
+    fprintf(stdout,"\n");
+    if(token_counter ==0) {
+	fprintf(stdout,"\t token drop probability = Not Available (No tokens were generated)\n");
+    } else {
+   	token_drop_prob = dropped_tokens/token_counter;
+    	fprintf(stdout,"\t token drop probability = %.6g\n",token_drop_prob);
+    }
+
+    if(packet_counter==0) {
+	fprintf(stdout,"\t packet drop probability = Not Available (No packets were generated)\n");
+    } else {
+ 	packet_drop_prob = dropped_packets/packet_counter;
+    	fprintf(stdout,"\t packet drop probability = %.6g\n",packet_drop_prob);
+    }
+
+}
+
 void *
 handler(char argv1[])
 {
-   while(1) {
       act.sa_handler = interrupt;
       sigaction(SIGINT, &act, NULL);
       pthread_sigmask(SIG_UNBLOCK, &new, NULL);
       printf("\n Press CTRL-C to deliver SIGINT\n");
-   }
 }
 
 void
@@ -763,9 +887,6 @@ int main(int argc, char *argv[])
     PrintValues();
     fprintf(stdout,"\n00000000.000ms: emulation begins\n");  
     gettimeofday(&emulationstart,NULL);
-    //sigemptyset(&set);
-    //sigaddset(&set, SIGINT);
-    //sigprocmask(SIG_BLOCK, &set, 0);
 
     sigemptyset(&new);
     sigaddset(&new, SIGINT);
@@ -804,5 +925,6 @@ int main(int argc, char *argv[])
     pthread_join(s2thread,(void **)&s2result);
     gettimeofday(&emulationend,NULL);
     fprintf(stdout,"%012.3fms: emulation ends\n",converttomilliseconds(calculatedifffromstart(emulationend)));
+    PrintStatistics(emulationend);
     return(0);
 }
