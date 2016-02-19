@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include <string.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -54,6 +55,7 @@ struct sigaction act;
 double total_int_arr_time=0; //time in milliseconds
 double total_service_time=0;
 double total_system_time=0;
+double total_system_time_sqrd=0;
 double total_time_Q1=0;
 double total_time_Q2=0;
 double total_time_S1=0;
@@ -572,6 +574,7 @@ void *server1handler(void *arg){
           total_time_S1+=service_time;
 	  totaltimeinsystem = converttomilliseconds(calculatediff(aftservice,pktgeneration));
           total_system_time+=totaltimeinsystem;
+	  total_system_time_sqrd+=totaltimeinsystem*totaltimeinsystem;
 	  flockfile (stdout);
 	  fprintf(stdout,"%012.3fms: p%d departs from S1, service time =%.3fms, time in system =%.3fms\n",timevalue,packet_id,service_time,totaltimeinsystem);
 	  funlockfile(stdout);
@@ -644,10 +647,11 @@ void *server2handler(void *arg){
 	  total_time_S2+=service_time;
           totaltimeinsystem = converttomilliseconds(calculatediff(aftservice,pktgeneration));
 	  total_system_time+=totaltimeinsystem;
+	  total_system_time_sqrd+=totaltimeinsystem*totaltimeinsystem;
           flockfile (stdout);
           fprintf(stdout,"%012.3fms: p%d departs from S2, service time =%.3fms, time in system =%.3fms\n",timevalue,packet_id,service_time,totaltimeinsystem);
           funlockfile(stdout);
-	  if ((packet_completed && My402ListEmpty(&Q1)) && My402ListEmpty(&Q2) || (terminateprocess)) {
+	  if ((packet_completed && My402ListEmpty(&Q1) && My402ListEmpty(&Q2)) || (terminateprocess)) {
 	    all_packet_processed =1;
             pthread_exit(NULL);
           }
@@ -789,18 +793,18 @@ void PrintStatistics() {
 
     //convert all the time to seconds
     double avg_service_time,avg_total_time_Q1,avg_total_time_Q2,avg_total_time_S1,avg_total_time_S2;
-    double avg_int_arr_time,avg_system_time,std_dev_system_time,token_drop_prob,packet_drop_prob;
+    double avg_int_arr_time,avg_system_time,avg_system_time_sec,std_dev_system_time,token_drop_prob,packet_drop_prob;
 
     fprintf(stdout,"\nStatistics:\n");
     if(packet_counter == 0) {
-	fprintf(stdout,"\t average packet inter-arrival time = Not Available (No packets arrived into the system)\n");
+	fprintf(stdout,"\t average packet inter-arrival time = N/A (No packets arrived into the system)\n");
     } else {
         avg_int_arr_time = total_int_arr_time/(double)packet_counter;
 	avg_int_arr_time = convertmillitosec(avg_int_arr_time);
         fprintf(stdout,"\t average packet inter-arrival time = %.6g\n",avg_int_arr_time);
     }
     if(completed_packets == 0) {
-	fprintf(stdout,"\t average packet service time = Not Available (No packets were serviced during the emulation)\n");
+	fprintf(stdout,"\t average packet service time = N/A (No packets were serviced during the emulation)\n");
     } else {
    	avg_service_time = total_service_time/(double)completed_packets;
         avg_service_time = convertmillitosec(avg_service_time);
@@ -810,69 +814,64 @@ void PrintStatistics() {
     fprintf(stdout,"\n");
 
     if(total_time_Q1 == 0) {
-        fprintf(stdout,"\t average number of packets at Q1 = Not Available (No packets entered Q2)\n");
+        fprintf(stdout,"\t average number of packets at Q1 = N/A (No packets entered Q2)\n");
     }
     else {
 	avg_total_time_Q1 = total_time_Q1/emulationDuration;
-        avg_total_time_Q1 = convertmillitosec(avg_total_time_Q1);
         fprintf(stdout,"\t average number of packets at Q1 = %.6g\n",avg_total_time_Q1);
     }
 
     if(total_time_Q2 == 0) {
-        fprintf(stdout,"\t average number of packets at Q2 = Not Available (No packets entered Q2)\n");
+        fprintf(stdout,"\t average number of packets at Q2 = N/A (No packets entered Q2)\n");
     }
     else {
 	avg_total_time_Q2 = total_time_Q2/emulationDuration;
-        avg_total_time_Q2 = convertmillitosec(avg_total_time_Q2);
         fprintf(stdout,"\t average number of packets at Q2 = %.6g\n",avg_total_time_Q2);
     }
 
     if(total_time_S1 == 0) {
-	fprintf(stdout,"\t average number of packets at S1 = Not Available (No packets entered S1 for service)\n");
+	fprintf(stdout,"\t average number of packets at S1 = N/A (No packets entered S1 for service)\n");
     } else {
 	avg_total_time_S1 = total_time_S1/emulationDuration;
-	avg_total_time_S1 = convertmillitosec(avg_total_time_S1);
 	fprintf(stdout,"\t average number of packets at S1 = %.6g\n",avg_total_time_S1);
     }
   
     if(total_time_S2 == 0) {
-        fprintf(stdout,"\t average number of packets at S2 = Not Available (No packets entered S1 for service)\n");
+        fprintf(stdout,"\t average number of packets at S2 = N/A (No packets entered S2 for service)\n");
     } else {
 	avg_total_time_S2 = total_time_S2/emulationDuration;
-        avg_total_time_S2 = convertmillitosec(avg_total_time_S2);
         fprintf(stdout,"\t average number of packets at S2 = %.6g\n",avg_total_time_S2);
     }
  
     fprintf(stdout,"\n");
 
     if(completed_packets == 0) {
-        fprintf(stdout,"\t average time a packet spent in system = Not Available (No packets were serviced during the emulation)\n");
+        fprintf(stdout,"\t average time a packet spent in system = N/A (No packets were serviced during the emulation)\n");
     } else {
 	avg_system_time = total_system_time/(double)completed_packets;
-        avg_system_time = convertmillitosec(avg_system_time);
-	fprintf(stdout,"\t average time a packet spent in system = %.6g\n",avg_system_time);
+        avg_system_time_sec = convertmillitosec(avg_system_time);
+	fprintf(stdout,"\t average time a packet spent in system = %.6g\n",avg_system_time_sec);
     }
  
     if(completed_packets == 0) {
-	fprintf(stdout,"\t standard deviation for time spent in system = Not Available (No packets were serviced during the emulation)\n");
+	fprintf(stdout,"\t standard deviation for time spent in system = N/A (No packets were serviced during the emulation)\n");
     } else {
-	double val1 = total_system_time * total_system_time;
-        double val2 = val1/(double)completed_packets;
-        double val3 = val2 * val2;
-        double val4 = val2-val3;
-        //std_dev_system_time = sqrt(val4);
-	fprintf(stdout,"\t standard deviation for time spent in system = %.6g\n",val4);
+        double avg_total_sqrd = total_system_time_sqrd/(double)completed_packets; //time in milli
+        double avg_system_time_sqrd = avg_system_time * avg_system_time; //time in milli
+        double val4 = avg_total_sqrd-avg_system_time_sqrd;
+        std_dev_system_time = sqrt(val4);
+	fprintf(stdout,"\t standard deviation for time spent in system = %.6g\n",std_dev_system_time/1000);
     }
     fprintf(stdout,"\n");
     if(token_counter ==0) {
-	fprintf(stdout,"\t token drop probability = Not Available (No tokens were generated)\n");
+	fprintf(stdout,"\t token drop probability = N/A (No tokens were generated)\n");
     } else {
    	token_drop_prob = (double)dropped_tokens/(double)token_counter;
     	fprintf(stdout,"\t token drop probability = %.6g\n",token_drop_prob);
     }
 
     if(packet_counter==0) {
-	fprintf(stdout,"\t packet drop probability = Not Available (No packets were generated)\n");
+	fprintf(stdout,"\t packet drop probability = N/A (No packets were generated)\n");
     } else {
  	packet_drop_prob = (double)dropped_packets/(double)packet_counter;
     	fprintf(stdout,"\t packet drop probability = %.6g\n",packet_drop_prob);
@@ -880,9 +879,7 @@ void PrintStatistics() {
 
 }
 
-void *
-handler()
-{
+void *handler() {
     while(1) {
       act.sa_handler = interrupt;
       sigaction(SIGINT, &act, NULL);
@@ -890,13 +887,44 @@ handler()
     }
 }
 
-void
-interrupt(int sig) {
+void interrupt(int sig) {
     terminateprocess = 1;
+    
+    pthread_mutex_lock(&mutex);
     pthread_cancel(pkthread);
     pthread_cancel(ththread);
-    pthread_cond_broadcast(&queue_not_empty);
+
+    if(My402ListEmpty(&Q2))
+      pthread_cond_broadcast(&queue_not_empty);
+    pthread_mutex_unlock(&mutex);
     all_packet_processed =1;
+    
+    My402ListElem *elem=NULL;
+    struct timeval packetremoved;
+    int removed_packets=0;
+    double removed_time=0.0;
+    pthread_mutex_lock(&mutex);
+    if(!My402ListEmpty(&Q1)) {
+      for (elem=My402ListFirst(&Q1); elem != NULL; elem=My402ListNext(&Q1, elem)) {
+	    removed_packets++;
+	    gettimeofday(&packetremoved,NULL);
+	    removed_time = converttomilliseconds(calculatedifffromstart(packetremoved));
+	    flockfile(stdout);
+	    fprintf(stdout,"%012.3fms: p%d removed from Q1\n",removed_time,((packetelem *)(elem -> obj)) -> p_id);
+	    funlockfile(stdout);
+        }
+      }
+    if(!My402ListEmpty(&Q2)) {
+      for (elem=My402ListFirst(&Q2); elem != NULL; elem=My402ListNext(&Q2, elem)) {
+	    removed_packets++;
+            gettimeofday(&packetremoved,NULL);
+            removed_time = converttomilliseconds(calculatedifffromstart(packetremoved));
+ 	    flockfile(stdout);
+            fprintf(stdout,"%012.3fms: p%d removed from Q2\n",removed_time,((packetelem *)(elem -> obj)) -> p_id);
+	    funlockfile(stdout);
+        }
+      }
+    pthread_mutex_unlock(&mutex);
     pthread_exit(NULL);
 }
 
