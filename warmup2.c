@@ -89,7 +89,7 @@ void Handle_Error(char *error, int line_num){
             fprintf(stderr,"Error: %s\n",error);
             fprintf(stderr,"Error at line %d\n",line_num);
         } else
-            fprintf(stderr,"Error: %s",error);
+            fprintf(stderr,"Error: %s\n",error);
     }
     exit(1);
 }
@@ -159,6 +159,24 @@ int IsNumber(char *number){
 }
 
 static
+void checkforvalidity(char *number) {
+   int found =0;
+   int i=0;
+   while(number[i]!='\0') {
+     if((number[i]==46) && !found) {
+	//*number++;
+	i++;
+	found = 1;	
+     }
+     else if(number[i]>47 && number[i]<58){
+	//*number++;
+	i++;
+     } else
+	Usage();
+   }
+}
+
+static
 void checkifvalid(char *val) {
    char *error;
    if (strlen(val)>10) {
@@ -170,8 +188,7 @@ void checkifvalid(char *val) {
            Handle_Error(error,0);
       }
       if(!IsNumber(val)) {
-           error="Please provide a valid value";
-           Handle_Error(error,0);
+	   Usage();
       }
 
       int val_num = atoi(val);
@@ -247,6 +264,11 @@ void *packethandler(void *arg) {
       if(!deterministic) {
 	if(line_num <= num) {
           if((fgets(buf, sizeof(buf), fp))!=NULL) {
+	    char* temp1 = buf;
+            if(isspace(*temp1)){
+               error="Please provide a valid value";
+               Handle_Error(error,0);
+            }
 	    delimiter_count =0;
 	    line_num++;
             file_interarrival = strtok_r(buf," \t",&savestr);	  
@@ -287,12 +309,7 @@ void *packethandler(void *arg) {
 	      error = "Less number of packet information provided in the file." ;
 	      Handle_Error(error,line_num);
 	  }
-	} else {
-	    if((fgets(buf, sizeof(buf), fp))!=NULL) {
-	      error = "More number of packet information provided in the file.";
-              Handle_Error(error,line_num);
-	    } 
-	}
+	} 
       }
       //current packet processing starts
       if(packet_counter==num) {
@@ -301,8 +318,7 @@ void *packethandler(void *arg) {
       if(packet_completed) 
 	 pthread_exit(NULL);
       else {
-        packet_counter++;
-	if(packet_counter==1)
+	if(packet_counter==0)
           sleeptime = p_interarrivaltime; //time in microsecond
         else 
           sleeptime = p_interarrivaltime - (bfrsleep-aftproc); //time in microsecond
@@ -310,6 +326,7 @@ void *packethandler(void *arg) {
 	if(sleeptime >0) 
           usleep(sleeptime);
 
+	packet_counter++;
 	gettimeofday(&beforeSleep,NULL);
         bfrsleep = structtimeinmicrosec(beforeSleep);  //time in microsecond
 
@@ -359,7 +376,7 @@ void *packethandler(void *arg) {
 		  temp = converttomilliseconds(calculatedifffromstart(aftQ1departs));
 		  diffval = converttomilliseconds(calculatediff(aftQ1departs,bfrQ1arrival));
 	    	  flockfile (stdout);
-	    	  fprintf(stdout,"%012.3fms: p%d leaves Q1, time in Q1=%.3f\n",temp,packet_counter,diffval);
+	    	  fprintf(stdout,"%012.3fms: p%d leaves Q1, time in Q1 = %.3fms\n",temp,packet_counter,diffval);
 		  gettimeofday(&bfrQ2arrival,NULL);
 		  temp = converttomilliseconds(calculatedifffromstart(bfrQ2arrival));
 	    	  fprintf(stdout,"%012.3fms: p%d enters Q2\n",temp,packet_counter);
@@ -371,7 +388,7 @@ void *packethandler(void *arg) {
                   temp = converttomilliseconds(calculatedifffromstart(aftQ1departs));
 		  diffval = converttomilliseconds(calculatediff(aftQ1departs,bfrQ1arrival));
 	    	  flockfile (stdout);
-	    	  fprintf(stdout,"%012.3fms: p%d leaves Q1, time in Q1=%.3f\n",temp,packet_counter,diffval);
+	    	  fprintf(stdout,"%012.3fms: p%d leaves Q1, time in Q1 = %.3fms\n",temp,packet_counter,diffval);
 		  gettimeofday(&bfrQ2arrival,NULL);
                   temp = converttomilliseconds(calculatedifffromstart(bfrQ2arrival));
 	    	  fprintf(stdout,"%012.3fms: p%d enters Q2\n",temp,packet_counter);
@@ -463,7 +480,10 @@ void *tokenhandler(void *arg){
 	gettimeofday(&afttoken,NULL);
         temp = converttomilliseconds(calculatedifffromstart(afttoken));
 	flockfile (stdout);
-	fprintf(stdout,"%012.3fms: token t%d arrives, token bucket now has %d token\n",temp,token_counter,available_tokens);
+	if(available_tokens==1)
+	  fprintf(stdout,"%012.3fms: token t%d arrives, token bucket now has %d token\n",temp,token_counter,available_tokens);
+	else
+	  fprintf(stdout,"%012.3fms: token t%d arrives, token bucket now has %d tokens\n",temp,token_counter,available_tokens);
 	funlockfile(stdout);
     }
     while(!My402ListEmpty(&Q1)) {
@@ -483,7 +503,7 @@ void *tokenhandler(void *arg){
           packet->Q1DepartureTime=afrQ1remo;
           temp = converttomilliseconds(calculatedifffromstart(afrQ1remo));
 	  timeinQ1 = converttomilliseconds(calculatediff(afrQ1remo,Q1time));
-          fprintf(stdout,"%012.3fms: p%d leaves Q1, time in Q1=%.3f, token bucket now has %d token\n",temp,packet_id,timeinQ1,available_tokens);
+          fprintf(stdout,"%012.3fms: p%d leaves Q1, time in Q1= %.3fms, token bucket now has %d token\n",temp,packet_id,timeinQ1,available_tokens);
 	  funlockfile(stdout);
           if (!My402ListEmpty(&Q2)) {
 	    gettimeofday(&Q2time,NULL);
@@ -558,7 +578,7 @@ void *server1handler(void *arg){
           total_time_Q1+=timeinQ1;
           timevalue = converttomilliseconds(calculatedifffromstart(Q2DepartTime));
           flockfile (stdout);
-          fprintf(stdout,"%012.3fms: p%d leaves Q2, time in Q2=%.3fms\n",timevalue,packet_id,timeinQ2);
+          fprintf(stdout,"%012.3fms: p%d leaves Q2, time in Q2 = %.3fms\n",timevalue,packet_id,timeinQ2);
           gettimeofday(&bfrservice,NULL);
           timevalue = converttomilliseconds(calculatedifffromstart(bfrservice));
           fprintf(stdout,"%012.3fms: p%d begins service at S1, requesting %.3fms of service\n",timevalue,packet_id,converttomilliseconds(packet->p_service_time));
@@ -576,7 +596,7 @@ void *server1handler(void *arg){
           total_system_time+=totaltimeinsystem;
 	  total_system_time_sqrd+=totaltimeinsystem*totaltimeinsystem;
 	  flockfile (stdout);
-	  fprintf(stdout,"%012.3fms: p%d departs from S1, service time =%.3fms, time in system =%.3fms\n",timevalue,packet_id,service_time,totaltimeinsystem);
+	  fprintf(stdout,"%012.3fms: p%d departs from S1, service time = %.3fms, time in system = %.3fms\n",timevalue,packet_id,service_time,totaltimeinsystem);
 	  funlockfile(stdout);
 	  if ((packet_completed && My402ListEmpty(&Q1) && My402ListEmpty(&Q2)) || (terminateprocess)) {
 	    all_packet_processed =1;
@@ -631,7 +651,7 @@ void *server2handler(void *arg){
           total_time_Q1+=timeinQ1;
           timevalue = converttomilliseconds(calculatedifffromstart(Q2DepartTime));
           flockfile (stdout);
-          fprintf(stdout,"%012.3fms: p%d leaves Q2, time in Q2=%.3fms\n",timevalue,packet_id,timeinQ2);
+          fprintf(stdout,"%012.3fms: p%d leaves Q2, time in Q2 = %.3fms\n",timevalue,packet_id,timeinQ2);
           gettimeofday(&bfrservice,NULL);
           timevalue = converttomilliseconds(calculatedifffromstart(bfrservice));
           fprintf(stdout,"%012.3fms: p%d begins service at S2, requesting %.3fms of service\n",timevalue,packet_id,converttomilliseconds(packet->p_service_time));
@@ -649,7 +669,7 @@ void *server2handler(void *arg){
 	  total_system_time+=totaltimeinsystem;
 	  total_system_time_sqrd+=totaltimeinsystem*totaltimeinsystem;
           flockfile (stdout);
-          fprintf(stdout,"%012.3fms: p%d departs from S2, service time =%.3fms, time in system =%.3fms\n",timevalue,packet_id,service_time,totaltimeinsystem);
+          fprintf(stdout,"%012.3fms: p%d departs from S2, service time = %.3fms, time in system = %.3fms\n",timevalue,packet_id,service_time,totaltimeinsystem);
           funlockfile(stdout);
 	  if ((packet_completed && My402ListEmpty(&Q1) && My402ListEmpty(&Q2)) || (terminateprocess)) {
 	    all_packet_processed =1;
@@ -672,44 +692,47 @@ void ProcessOptions(int argc, char *argv[])
      	for (i=1; i< argc; i=i+2) {
    	    if((strcmp(argv[i],"-lambda")==0) && (argc > i+1)) {
 		if (sscanf(argv[i+1], "%lf", &lambda) != 1) {
-		   error="Please provide a valid value";
-		   Handle_Error(error,0); 
-		}
-		if(lambda<0) {
-		   error="Please provide a valid value";
-		   Handle_Error(error,0);
-		}
+                   Usage();
+                }
+		if (lambda<0) {
+                   error="Please provide a valid value";
+                   Handle_Error(error,0);
+                }
+		val=argv[i+1];
+		checkforvalidity(val);
+		lambda_print_val = lambda;
 		double temp_lambda = 1/lambda; //in seconds
 		if(temp_lambda > 10) {
-		  lambda_print_val = lambda;
 		  lambda = 0.1; //figure this out
 		}
 	    } else if((strcmp(argv[i],"-mu")==0) && (argc > i+1)) {
 		if (sscanf(argv[i+1], "%lf", &mu) != 1) {
-		   error="Please provide a valid value";
-		   Handle_Error(error,0);
+		   Usage();
                 }
 		if (mu<0) {
 		   error="Please provide a valid value";
 		   Handle_Error(error,0);
 		}
+		val=argv[i+1];
+		checkforvalidity(val);
+	   	mu_print_val = mu;
 		double temp_mu = 1/mu; //in seconds
 		if(temp_mu >10) {
-		   mu_print_val = mu;
 		   mu =0.1;
 	        }
 	    } else if((strcmp(argv[i],"-r")==0) && (argc > i+1)) {
 		if (sscanf(argv[i+1], "%lf", &r) != 1) {
-		   error="Please provide a valid value";
-		   Handle_Error(error,0);
+		   Usage();
                 }
 		if(r<0) {
 		   error="Please provide a valid value";
 		   Handle_Error(error,0);
 		}
+		val=argv[i+1];
+	    	checkforvalidity(val);
+		r_print_val = r;
 		double temp_r = 1/r; //in seconds
 		if(temp_r >10) {
-		   r_print_val = r;
 		   r=0.1;
 		}
 	    } else if((strcmp(argv[i],"-B")==0) && (argc > i+1)) {
@@ -720,10 +743,14 @@ void ProcessOptions(int argc, char *argv[])
 		val = argv[i+1];
 		checkifvalid(val);
 		P=atoi(val);
-	    } else if((strcmp(argv[i],"-num")==0) && (argc > i+1)) {
+	    } else if((strcmp(argv[i],"-n")==0) && (argc > i+1)) {
 		val = argv[i+1];
                 checkifvalid(val);
                 num=atoi(val);
+		if(num==0) {
+                   fprintf(stderr,"No packets to be processed\n");
+                   exit(1);
+                }
 	    } else if ((strcmp(argv[i],"-t")==0) && (argc > i+1)) {
 		if(stat(argv[i+1],&dirbuf) ==0){
                   if((S_ISDIR(dirbuf.st_mode))) {
@@ -744,6 +771,10 @@ void ProcessOptions(int argc, char *argv[])
       		     *temp = '\0';
 		   checkifvalidvalue(buf,1);
 		   num=atoi(buf);
+		}
+		if(num==0) {
+		   fprintf(stderr,"No packets to be processed\n");
+		   exit(1);
 		}
 		deterministic=0;
 	    } else {
@@ -814,30 +845,30 @@ void PrintStatistics() {
     fprintf(stdout,"\n");
 
     if(total_time_Q1 == 0) {
-        fprintf(stdout,"\t average number of packets at Q1 = N/A (No packets entered Q2)\n");
+        fprintf(stdout,"\t average number of packets in Q1 = 0\n");
     }
     else {
 	avg_total_time_Q1 = total_time_Q1/emulationDuration;
-        fprintf(stdout,"\t average number of packets at Q1 = %.6g\n",avg_total_time_Q1);
+        fprintf(stdout,"\t average number of packets in Q1 = %.6g\n",avg_total_time_Q1);
     }
 
     if(total_time_Q2 == 0) {
-        fprintf(stdout,"\t average number of packets at Q2 = N/A (No packets entered Q2)\n");
+        fprintf(stdout,"\t average number of packets in Q2 = 0\n");
     }
     else {
 	avg_total_time_Q2 = total_time_Q2/emulationDuration;
-        fprintf(stdout,"\t average number of packets at Q2 = %.6g\n",avg_total_time_Q2);
+        fprintf(stdout,"\t average number of packets in Q2 = %.6g\n",avg_total_time_Q2);
     }
 
     if(total_time_S1 == 0) {
-	fprintf(stdout,"\t average number of packets at S1 = N/A (No packets entered S1 for service)\n");
+	fprintf(stdout,"\t average number of packets at S1 = 0\n");
     } else {
 	avg_total_time_S1 = total_time_S1/emulationDuration;
 	fprintf(stdout,"\t average number of packets at S1 = %.6g\n",avg_total_time_S1);
     }
   
     if(total_time_S2 == 0) {
-        fprintf(stdout,"\t average number of packets at S2 = N/A (No packets entered S2 for service)\n");
+        fprintf(stdout,"\t average number of packets at S2 = 0\n");
     } else {
 	avg_total_time_S2 = total_time_S2/emulationDuration;
         fprintf(stdout,"\t average number of packets at S2 = %.6g\n",avg_total_time_S2);
@@ -863,15 +894,16 @@ void PrintStatistics() {
 	fprintf(stdout,"\t standard deviation for time spent in system = %.6g\n",std_dev_system_time/1000);
     }
     fprintf(stdout,"\n");
-    if(token_counter ==0) {
+	
+    if(token_counter == 0) {
 	fprintf(stdout,"\t token drop probability = N/A (No tokens were generated)\n");
     } else {
-   	token_drop_prob = (double)dropped_tokens/(double)token_counter;
-    	fprintf(stdout,"\t token drop probability = %.6g\n",token_drop_prob);
+        token_drop_prob = (double)dropped_tokens/(double)token_counter;
+        fprintf(stdout,"\t token drop probability = %.6g\n",token_drop_prob);
     }
 
     if(packet_counter==0) {
-	fprintf(stdout,"\t packet drop probability = N/A (No packets were generated)\n");
+	fprintf(stdout,"\t packet drop probability = N/A (No packets arrived into the system)\n");
     } else {
  	packet_drop_prob = (double)dropped_packets/(double)packet_counter;
     	fprintf(stdout,"\t packet drop probability = %.6g\n",packet_drop_prob);
@@ -880,14 +912,9 @@ void PrintStatistics() {
 }
 
 void *handler() {
-    while(1) {
-      act.sa_handler = interrupt;
-      sigaction(SIGINT, &act, NULL);
-      pthread_sigmask(SIG_UNBLOCK, &new, NULL);
-    }
-}
+    int signal;
+    sigwait(&new,&signal);
 
-void interrupt(int sig) {
     terminateprocess = 1;
     
     pthread_mutex_lock(&mutex);
