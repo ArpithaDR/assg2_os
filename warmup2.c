@@ -6,6 +6,8 @@
 #include <signal.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <ctype.h>
+#include <locale.h>
 #include "cs402.h"
 #include "my402list.h"
 #include <sys/stat.h>
@@ -86,10 +88,15 @@ void Handle_Error(char *error, int line_num){
     fprintf(stderr,"Input data is invalid\n");
     if(error!=NULL) {
         if(line_num!=0) {
+	    flockfile (stdout);
             fprintf(stderr,"Error: %s\n",error);
             fprintf(stderr,"Error at line %d\n",line_num);
-        } else
+	    funlockfile(stdout);
+        } else {
+	    flockfile (stdout);
             fprintf(stderr,"Error: %s\n",error);
+	    funlockfile(stdout);
+	}
     }
     exit(1);
 }
@@ -230,7 +237,6 @@ void checkifvalidvalue(char *token, int line_num) {
 
 
 void *packethandler(void *arg) {
-//void packethandler() {
     double p_interarrivaltime = 0;
     double p_servicetime;
     struct timeval beforeSleep,afterpktProc;
@@ -260,7 +266,6 @@ void *packethandler(void *arg) {
         numoftokens = P;
     }
     for(;;) {
-	//sigwait(&set, &sig);
       if(!deterministic) {
 	if(line_num <= num) {
           if((fgets(buf, sizeof(buf), fp))!=NULL) {
@@ -288,7 +293,7 @@ void *packethandler(void *arg) {
             if (temp)
                *temp = '\0';
 	    else {
-	       error = "Invalid file format.\n";
+	       error = "Invalid file format.";
                Handle_Error(error,line_num);
 	    }
 	    checkifvalidvalue(file_service,line_num);
@@ -302,7 +307,7 @@ void *packethandler(void *arg) {
             }
 
 	    if(delimiter_count!=2) {
-               error = "Invalid file.\n";
+               error = "Invalid file.";
                Handle_Error(error,line_num);
             }
 	  } else {
@@ -808,10 +813,10 @@ void PrintValues() {
     fprintf(stdout,"Emulation Parameters:\n");
     fprintf(stdout,"\tnumber to arrive = %d\n",num);
     if(deterministic){
-	fprintf(stdout,"\tlambda = %f\n",lambda_print_val);
-	fprintf(stdout,"\tmu = %f\n",mu_print_val);
+	fprintf(stdout,"\tlambda = %.3g\n",lambda_print_val);
+	fprintf(stdout,"\tmu = %.3g\n",mu_print_val);
     }
-    fprintf(stdout,"\tr = %f\n",r_print_val);
+    fprintf(stdout,"\tr = %.3g\n",r_print_val);
     fprintf(stdout,"\tB = %d\n",B);
     if(deterministic)
 	fprintf(stdout,"\tP = %d\n",P);
